@@ -236,7 +236,7 @@ body {
 .preview {
   position: relative;
   padding: 200px 0px;
-  background: url(../img/modern-img/header-bg.webp) center/cover no-repeat fixed;
+  background: url(../img/header-fon.jpg) center/cover no-repeat fixed;
 }
 
 .preview:after {
@@ -909,11 +909,15 @@ span.footer__year {
 
 .popup-order__subtitle {
   font-family: Roboto;
-  font-size: 24px;
+  font-size: 26px;
   margin: 0 auto;
   text-align: center;
-  max-width: 300px;
+  max-width: 350px;
   margin-bottom: 53px;
+}
+
+.popup-order__subtitle-little {
+  font-size: 19px;
 }
 
 .popup-order__order {
@@ -970,7 +974,7 @@ span.footer__year {
   padding: 23px 35px;
   background: #f7f7f7;
   border-radius: 32px;
-  margin-bottom: 7px;
+  margin-bottom: 17px;
   -webkit-transition: -webkit-box-shadow .3s;
   transition: -webkit-box-shadow .3s;
   transition: box-shadow .3s;
