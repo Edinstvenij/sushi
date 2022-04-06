@@ -236,7 +236,7 @@ body {
 .preview {
   position: relative;
   padding: 200px 0px;
-  background: url(/img/modern-img/header-bg.webp) center/cover no-repeat fixed;
+  background: url(../img/modern-img/header-bg.webp) center/cover no-repeat fixed;
 }
 
 .preview:after {
