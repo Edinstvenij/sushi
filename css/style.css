@@ -480,38 +480,26 @@ h2 {
   transition: all 0.3s;
   width: 120px;
   background: initial;
-  color: #cdcdcd;
+  color: #b6b6b6;
   padding: 15px 30px;
   -webkit-transition: color .3s;
   transition: color .3s;
-}
+  text-transform: capitalize;
+  cursor: default;
+  /*
+      &.active {
+        transition: all 0.3s;
+        color: #ffffff;
+        background: tomato;
 
-.item__size button:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  color: #2f2f2f;
-}
-
-.item__size button:active {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-}
-
-.item__size button.active {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  color: #ffffff;
-  background: tomato;
-}
-
-.item__size button.active:hover {
-  -webkit-transform: none;
+        &:hover {
           transform: none;
-}
+        }
 
-.item__size button.active:active {
-  -webkit-transform: none;
+        &:active {
           transform: none;
+        }
+      } */
 }
 
 .item__size-one button {
