@@ -1195,6 +1195,9 @@ span.footer__year {
   .mobile-menu__link {
     font-size: 20px;
   }
+  .popup__exit {
+    top: 56px;
+  }
 }
 
 @media (max-width: 480px) {

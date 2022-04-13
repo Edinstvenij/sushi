@@ -1,5 +1,4 @@
 <?php
-
 // $name = $_POST['name'];
 $phone = $_POST['phone'];
 // $msg = $_POST['msg'];
