@@ -595,6 +595,10 @@ h2 {
   font-size: 18px;
 }
 
+.about__subtitle-last {
+  margin-top: 10px;
+}
+
 .contacts {
   overflow: hidden;
   padding: 110px 0px 120px;
