@@ -975,29 +975,15 @@
         <div class="popup__content">
           <button class="popup__exit popup__close" type="button"></button>
           <h2 class="popup-order__title">Заполните форму</h2>
-          <p class="popup-order__subtitle">Мы привезем ваш заказ за 60 минут</p>
+          <div>
+            <p class="popup-order__subtitle">Мы вам перезвоним для оформления заказа</p>
+            <p class="popup-order__subtitle popup-order__subtitle-little">У вас есть время выбрать что-то еще)</p>
+          </div>
           <div class="popup-order__order">
-            <div class="popup-order__img">
-              <img src="img/modern-img/1.webp" alt="">
-            </div>
-            <div class="popup-order__item-name-and-price">
-              <span>Салями</span> <span>200</span> &#8372;
-            </div>
-            <div class="popup-order__size">
-              30 см
-            </div>
-            <form class="popup-order__form">
-              <input type="hidden" name="product">
-              <input type="hidden" name="price">
-              <input type="hidden" name="size">
 
-              <input class="form__input" type="text" name="name" placeholder="Имя" required>
-              <input class="form__input" type="tel" name="phone" placeholder="Телефон" required>
-              <input class="form__input" type="text" name="address" placeholder="Адрес доставки" required>
-              <select class="form__input" name="payment">
-                <option value="Оплата наличными">Оплата наличными</option>
-                <option value="Оплата картой">Оплата картой</option>
-              </select>
+            <form id="form" class="popup-order__form" method="POST" name="form">
+              <input class="form__input" type="tel" name="phone" placeholder="Телефон"
+                oninput="this.value = this.value.replace(/\D/g, '')" required>
               <button class="item__btn form__btn" type="submit">Отправить</button>
             </form>
 
@@ -1008,12 +994,14 @@
   </section>
 
 
-  <section class="popup  popup-over ">
-    <div class="popup-over__wrapper">
-      <button class="popup__exit popup__close" type="button"></button>
-      <div class="popup-over__content">
-        <h2 class="popup-over__title">Успешно отправлено</h2>
-        <p class="popup-over__subtitle">Мы уже начали готовить ваш заказ =)</p>
+  <section class="popup  popup-over">
+    <div class="popup__wrapper">
+      <div class="popup__inner">
+        <div class="popup__content">
+          <button class="popup__exit popup__close" type="button"></button>
+          <h2 class="popup-over__title">Успешно отправлено</h2>
+          <p class="popup-over__subtitle">Ожидайте ответа =)</p>
+        </div>
       </div>
     </div>
   </section>
@@ -1039,6 +1027,8 @@
   <script src="js/popup.js"></script>
   <script src="js/scrollTo.js"></script>
   <script src="js/menu.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/telegram.js"></script>
 </body>
 
 </html>
